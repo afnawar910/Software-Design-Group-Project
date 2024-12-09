@@ -1,0 +1,241 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-container h2 {
+    color: #FF69B4;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #8B4513;
+    font-weight: bold;
+  }
+  
+  /* Read-only fields */
+  .form-group span {
+    display: block;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    color: #495057;
+  }
+  
+  /* Editable sections */
+  .skills-section,
+  .preferences-section,
+  .availability-section {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .help-text {
+    display: block;
+    margin-top: 0.5rem;
+    color: #6c757d;
+    font-size: 0.875rem;
+  }
+  
+  .skills-select {
+    margin-bottom: 0.5rem;
+  }
+  
+  .preferences-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .skills-display,
+  .dates-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .skill-tag,
+  .date-tag {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .remove-date {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  
+  .dashboard-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .edit-button {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-button:hover {
+    background-color: #693610;
+  }
+  
+  .edit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.5);
+  }
+  
+  /* Style for editable sections */
+  .form-group.editing {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  /* Active state for form controls */
+  .skills-select:focus,
+  .preferences-textarea:focus {
+    border-color: #8B4513;
+    box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+  }
+  
+  .edit-button,
+  .save-button,
+  .cancel-button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .edit-button,
+  .save-button {
+    background-color: #8B4513;
+    color: white;
+  }
+  
+  .edit-button:hover,
+  .save-button:hover {
+    background-color: #693610;
+  }
+  
+  .cancel-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .logout-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 2rem;
+    width: 100%;
+    transition: background-color 0.2s;
+  }
+  
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  
+  .selected-dates {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+
+  .editing-active {
+    background-color: #fff8dc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-container.editing {
+    border: 2px solid #8B4513;
+  }
+  
+  .edit-mode-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .skills-section,
+  .preferences-section,
+  .availability-section {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+  
+  .skills-section.editing,
+  .preferences-section.editing,
+  .availability-section.editing {
+    border-color: #8B4513;
+    box-shadow: 0 0 5px rgba(139, 69, 19, 0.2);
+  }

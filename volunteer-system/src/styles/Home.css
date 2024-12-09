@@ -1,0 +1,39 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px; 
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.who-are-we-container {
+    width: 100%;
+    background-color: #f8cbc6; 
+    padding: 20px 0;
+}
+
+.who-are-we-image {
+    width: 100%;
+    max-width: 1200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .who-are-we-container {
+        padding: 10px 0;
+    }
+}

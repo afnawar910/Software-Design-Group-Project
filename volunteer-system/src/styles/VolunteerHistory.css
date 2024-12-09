@@ -1,0 +1,91 @@
+.volunteer-history-container {
+    margin: 20px;
+  }
+  
+  .volunteer-history-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .volunteer-history-table th, .volunteer-history-table td {
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #000000; 
+  }
+  
+  .status-matched {
+    color: #0056b3;
+    font-weight: 500;
+  }
+  
+  .status-attended {
+    color: #28a745;
+    font-weight: 500;
+  }
+  
+  .status-cancelled {
+    color: #dc3545;
+    font-weight: 500;
+  }
+  
+  .status-not-attended {
+    color: #6c757d;
+    font-weight: 500;
+  }
+  
+  /* Style for the status select dropdown */
+  select.status-matched,
+  select.status-attended,
+  select.status-cancelled,
+  select.status-not-attended {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-weight: 500;
+  }
+  
+  select:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+  }
+  
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+  }
+
+  .volunteer-selection {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Styling */
+  .volunteer-history-table {
+    background-color: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .volunteer-history-table th {
+    background-color: #f8cbc6;
+    color: #4a5568;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .volunteer-history-table td {
+    padding: 1rem;
+    border-top: 1px solid #f7fafc;
+  }
+  
+  .volunteer-history-table tr:hover {
+    background-color: #ffefed;
+  }
